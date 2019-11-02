@@ -49,8 +49,6 @@ router.get("/confirm", (req, res, next) => {
         debug(`Paymente done: ${JSON.stringify(transaction)}`)
         // 領収書メッセージを返す
         const receiptMessage = generateReceiptMessage(transaction)
-        debug(`Receipt message: ${JSON.stringify(receiptMessage)}`)
-        debug(`userId: ${transaction.userId}`)
         const botClient = req.app.locals.botClient
         return botClient.pushMessage(transaction.userId, receiptMessage)
     }).catch((error) => {
