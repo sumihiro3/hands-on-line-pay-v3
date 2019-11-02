@@ -1,0 +1,563 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://illustimage.com/photo/dl/498.png?20160706",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "1:1",
+            "gravity": "top"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "カボチャ",
+                    "size": "xl",
+                    "color": "#000000",
+                    "weight": "bold"
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "3円",
+                    "color": "#666666",
+                    "size": "md",
+                    "flex": 0
+                  }
+                ],
+                "spacing": "lg"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "filler"
+                      },
+                      {
+                        "type": "icon",
+                        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip14.png"
+                      },
+                      {
+                        "type": "text",
+                        "text": "カートに入れる",
+                        "color": "#f4f4f4",
+                        "flex": 0,
+                        "offsetTop": "-2px"
+                      },
+                      {
+                        "type": "filler"
+                      }
+                    ],
+                    "spacing": "sm"
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ],
+                "spacing": "sm",
+                "margin": "xxl",
+                "height": "40px"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "action": {
+                          "type": "postback",
+                          "label": "1個",
+                          "data": "type=order&item=pumpkin&quantity=1&unit_price=3",
+                          "displayText": "カボチャ1個"
+                        },
+                        "flex": 1,
+                        "color": "#1dcd00",
+                        "style": "secondary",
+                        "margin": "sm"
+                      },
+                      {
+                        "type": "button",
+                        "action": {
+                          "type": "postback",
+                          "label": "2個",
+                          "data": "type=order&item=pumpkin&quantity=2&unit_price=3",
+                          "displayText": "カボチャ2個"
+                        },
+                        "flex": 1,
+                        "color": "#1dcd00",
+                        "style": "secondary",
+                        "margin": "sm"
+                      },
+                      {
+                        "type": "button",
+                        "action": {
+                          "type": "postback",
+                          "label": "3個",
+                          "data": "type=order&item=pumpkin&quantity=3&unit_price=3",
+                          "displayText": "カボチャ3個"
+                        },
+                        "flex": 1,
+                        "color": "#1dcd00",
+                        "style": "secondary",
+                        "margin": "sm"
+                      },
+                      {
+                        "type": "button",
+                        "action": {
+                          "type": "postback",
+                          "label": "4個",
+                          "data": "type=order&item=pumpkin&quantity=4&unit_price=3",
+                          "displayText": "カボチャ4個"
+                        },
+                        "flex": 1,
+                        "color": "#1dcd00",
+                        "style": "secondary",
+                        "margin": "sm"
+                      }
+                    ],
+                    "margin": "lg"
+                  }
+                ]
+              }
+            ],
+            "position": "relative",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#1dcd0088",
+            "paddingAll": "20px",
+            "paddingTop": "18px"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "SALE",
+                "color": "#ffffff",
+                "align": "center",
+                "size": "xs",
+                "offsetTop": "3px"
+              }
+            ],
+            "position": "absolute",
+            "cornerRadius": "20px",
+            "offsetTop": "18px",
+            "backgroundColor": "#ff334b",
+            "offsetStart": "18px",
+            "height": "25px",
+            "width": "53px"
+          }
+        ],
+        "paddingAll": "0px"
+      }
+    },
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://illustimage.com/photo/dl/501.png?20160706",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "1:1",
+            "gravity": "top"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "ニンジン",
+                    "size": "xl",
+                    "color": "#000000",
+                    "weight": "bold"
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "2円",
+                    "color": "#666666",
+                    "size": "md",
+                    "flex": 0
+                  }
+                ],
+                "spacing": "lg"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "filler"
+                      },
+                      {
+                        "type": "icon",
+                        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip14.png"
+                      },
+                      {
+                        "type": "text",
+                        "text": "カートに入れる",
+                        "color": "#f4f4f4",
+                        "flex": 0,
+                        "offsetTop": "-2px"
+                      },
+                      {
+                        "type": "filler"
+                      }
+                    ],
+                    "spacing": "sm"
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ],
+                "spacing": "sm",
+                "margin": "xxl",
+                "height": "40px"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "action": {
+                          "type": "postback",
+                          "label": "1個",
+                          "data": "type=order&item=carrot&quantity=1&unit_price=2",
+                          "displayText": "ニンジン1個"
+                        },
+                        "flex": 1,
+                        "color": "#1dcd00",
+                        "style": "secondary",
+                        "margin": "sm"
+                      },
+                      {
+                        "type": "button",
+                        "action": {
+                          "type": "postback",
+                          "label": "2個",
+                          "data": "type=order&item=carrot&quantity=2&unit_price=2",
+                          "displayText": "ニンジン2個"
+                        },
+                        "flex": 1,
+                        "color": "#1dcd00",
+                        "style": "secondary",
+                        "margin": "sm"
+                      },
+                      {
+                        "type": "button",
+                        "action": {
+                          "type": "postback",
+                          "label": "3個",
+                          "data": "type=order&item=carrot&quantity=3&unit_price=2",
+                          "displayText": "ニンジン3個"
+                        },
+                        "flex": 1,
+                        "color": "#1dcd00",
+                        "style": "secondary",
+                        "margin": "sm"
+                      },
+                      {
+                        "type": "button",
+                        "action": {
+                          "type": "postback",
+                          "label": "4個",
+                          "data": "type=order&item=carrot&quantity=4&unit_price=2",
+                          "displayText": "ニンジン4個"
+                        },
+                        "flex": 1,
+                        "color": "#1dcd00",
+                        "style": "secondary",
+                        "margin": "sm"
+                      }
+                    ],
+                    "margin": "lg"
+                  }
+                ]
+              }
+            ],
+            "position": "relative",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#1dcd0088",
+            "paddingTop": "18px",
+            "paddingAll": "20px"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "SALE",
+                "color": "#ffffff",
+                "align": "center",
+                "size": "xs",
+                "offsetTop": "3px"
+              }
+            ],
+            "position": "absolute",
+            "cornerRadius": "20px",
+            "offsetTop": "18px",
+            "backgroundColor": "#ff334b",
+            "offsetStart": "18px",
+            "height": "25px",
+            "width": "53px"
+          }
+        ],
+        "paddingAll": "0px"
+      }
+    },
+    {
+      "type": "bubble",
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://illustimage.com/photo/dl/502.png?20160706",
+            "size": "full",
+            "aspectMode": "cover",
+            "aspectRatio": "1:1",
+            "gravity": "top"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "たまねぎ",
+                    "size": "xl",
+                    "color": "#000000",
+                    "weight": "bold"
+                  }
+                ]
+              },
+              {
+                "type": "box",
+                "layout": "baseline",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "1円",
+                    "color": "#666666",
+                    "size": "md",
+                    "flex": 0
+                  }
+                ],
+                "spacing": "lg"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "baseline",
+                    "contents": [
+                      {
+                        "type": "filler"
+                      },
+                      {
+                        "type": "icon",
+                        "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip14.png"
+                      },
+                      {
+                        "type": "text",
+                        "text": "カートに入れる",
+                        "color": "#f4f4f4",
+                        "flex": 0,
+                        "offsetTop": "-2px"
+                      },
+                      {
+                        "type": "filler"
+                      }
+                    ],
+                    "spacing": "sm"
+                  },
+                  {
+                    "type": "filler"
+                  }
+                ],
+                "spacing": "sm",
+                "margin": "xxl",
+                "height": "40px"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "filler"
+                  },
+                  {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                      {
+                        "type": "button",
+                        "action": {
+                          "type": "postback",
+                          "label": "1個",
+                          "data": "type=order&item=onion&quantity=1&unit_price=1",
+                          "displayText": "たまねぎ1個"
+                        },
+                        "flex": 1,
+                        "color": "#1dcd00",
+                        "style": "secondary",
+                        "margin": "sm"
+                      },
+                      {
+                        "type": "button",
+                        "action": {
+                          "type": "postback",
+                          "label": "2個",
+                          "data": "type=order&item=onion&quantity=2&unit_price=1",
+                          "displayText": "たまねぎ2個"
+                        },
+                        "flex": 1,
+                        "color": "#1dcd00",
+                        "style": "secondary",
+                        "margin": "sm"
+                      },
+                      {
+                        "type": "button",
+                        "action": {
+                          "type": "postback",
+                          "label": "3個",
+                          "data": "type=order&item=onion&quantity=3&unit_price=1",
+                          "displayText": "たまねぎ3個"
+                        },
+                        "flex": 1,
+                        "color": "#1dcd00",
+                        "style": "secondary",
+                        "margin": "sm"
+                      },
+                      {
+                        "type": "button",
+                        "action": {
+                          "type": "postback",
+                          "label": "4個",
+                          "data": "type=order&item=onion&quantity=4&unit_price=1",
+                          "displayText": "たまねぎ4個"
+                        },
+                        "flex": 1,
+                        "color": "#1dcd00",
+                        "style": "secondary",
+                        "margin": "sm"
+                      }
+                    ],
+                    "margin": "lg"
+                  }
+                ]
+              }
+            ],
+            "position": "relative",
+            "offsetBottom": "0px",
+            "offsetStart": "0px",
+            "offsetEnd": "0px",
+            "backgroundColor": "#1dcd0088",
+            "paddingTop": "18px",
+            "paddingAll": "20px"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "SALE",
+                "color": "#ffffff",
+                "align": "center",
+                "size": "xs",
+                "offsetTop": "3px"
+              }
+            ],
+            "position": "absolute",
+            "cornerRadius": "20px",
+            "offsetTop": "18px",
+            "backgroundColor": "#ff334b",
+            "offsetStart": "18px",
+            "height": "25px",
+            "width": "53px"
+          }
+        ],
+        "paddingAll": "0px"
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "line-pay-hands-on",
+  "version": "1.0.0",
+  "description": "LINE Pay hands on sample program for LINE Pay API V3",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "DEBUG='line-pay:*' ./node_modules/nodemon/bin/nodemon.js server.js",
+    "debug": "DEBUG='line-pay:*' node server.js",
+    "windowsDebug": "@powershell -Command $env:DEBUG='line-pay:*'; node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumihiro3/hands-on-line-pay.git"
+  },
+  "author": "Sumihiro Kagawa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sumihiro3/hands-on-line-pay/issues"
+  },
+  "homepage": "https://github.com/sumihiro3/hands-on-line-pay#readme",
+  "dependencies": {
+    "@line/bot-sdk": "^6.0.1",
+    "bluebird": "^3.5.1",
+    "debug": "^3.1.0",
+    "dotenv": "^4.0.0",
+    "ejs": "^2.7.1",
+    "express": "^4.16.2",
+    "lossless-json": "^1.0.1",
+    "memory-cache": "^0.2.0",
+    "moment": "^2.24.0",
+    "nodemon": "^1.19.4",
+    "query-string": "^6.8.3",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^4.0.1",
+    "uuid": "^3.1.0"
+  }
+}
