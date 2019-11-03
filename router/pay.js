@@ -14,7 +14,10 @@ router.get("/confirm", (req, res, next) => {
     debug(`/pay/confirm called!`)
     const orderId = req.query.orderId
     const transactionId = req.query.transactionId
-    const shippingFeeAmount = req.query.shippingFeeAmount
+    let shippingFeeAmount = req.query.shippingFeeAmount
+    if (!shippingFeeAmount) {
+        shippingFeeAmount = 0
+    }
     const shippingMethodId = req.query.shippingMethodId
     debug(`orderId is ${orderId}`)
     debug(`transactionId is ${transactionId}`)
@@ -79,7 +82,7 @@ function generateReceiptMessage(transaction) {
                 },
                 {
                     "type": "text",
-                    "text": `${p.price} 円`,
+                    "text": `${p.price * p.quantity} 円`,
                     "size": "sm",
                     "color": "#111111",
                     "align": "end"

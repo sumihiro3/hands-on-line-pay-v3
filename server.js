@@ -10,13 +10,16 @@ app.listen(process.env.PORT || 5000, () => {
 });
 
 // LINE Pay API SDK の初期化
-const line_pay = require("./line-pay/line-pay");
+const line_pay = require("./line-pay/line-pay")
+debug(`useCheckout: ${process.env.LINE_PAY_USE_CHECKOUT}`)
+const useCheckout = process.env.LINE_PAY_USE_CHECKOUT === "true" ? true : false
 const pay = new line_pay({
     channelId: process.env.LINE_PAY_CHANNEL_ID,
     channelSecret: process.env.LINE_PAY_CHANNEL_SECRET,
-    // isSandbox: true
+    isSandbox: !useCheckout
 });
 app.locals.pay = pay
+app.locals.useCheckout = useCheckout
 
 // LINE Messaging API SDK　の初期化
 const lineBot = require("@line/bot-sdk");

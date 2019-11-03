@@ -70,7 +70,8 @@ router.post("/", botMiddleware, (req, res, next) => {
                 replyMessage = resetUserCart(userId)
             } else if (parsedData.type === "pay") {
                 const pay = req.app.locals.pay
-                replyMessage = await doPayRequest(event, userId, pay)
+                const useCheckout = req.app.locals.useCheckout
+                replyMessage = await doPayRequest(event, userId, pay, useCheckout)
             }
         }
         if (replyMessage) {
@@ -323,7 +324,7 @@ function findItemImageUrl(itemId) {
 }
 
 // 注文情報を生成しLINE Pay Request API を実行して決済処理を始める
-async function doPayRequest(event, userId, pay) {
+async function doPayRequest(event, userId, pay, useCheckout) {
     debug(`doPayRequest function called!: ${userId}`)
     const totalPrice = calcCartTotalPrice(userId)
     const items = getCartItems(userId)
@@ -359,15 +360,22 @@ async function doPayRequest(event, userId, pay) {
             cancelUrl: `https://${APP_HOST_NAME}/pay/cancel`,
         },
         options: {
-            shipping: {
-                type: "SHIPPING",
-                feeInquiryUrl: `https://${APP_HOST_NAME}/pay/shipping_methods`,
-                feeInquiryType: "CONDITION",
-            },
+            // shipping: {
+            //     type: "SHIPPING",
+            //     feeInquiryUrl: `https://${APP_HOST_NAME}/pay/shipping_methods`,
+            //     feeInquiryType: "CONDITION",
+            // },
             display: {
                 locale: "ja",
                 checkConfirmUrlBrowser: false
             }
+        }
+    }
+    if (useCheckout === true) {
+        options.options.shipping = {
+            type: "SHIPPING",
+            feeInquiryUrl: `https://${APP_HOST_NAME}/pay/shipping_methods`,
+            feeInquiryType: "CONDITION",
         }
     }
     debug(`Call LINE Pay Request API!!`);
