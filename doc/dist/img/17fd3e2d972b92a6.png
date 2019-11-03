@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="551px" preserveAspectRatio="none" style="width:568px;height:551px;" version="1.1" viewBox="0 0 568 551" width="568px" zoomAndPan="magnify"><defs/><g><rect fill="#FFE4B5" height="116.5059" style="stroke: #808080; stroke-width: 1.0;" width="10" x="59" y="113.4165"/><rect fill="#FFE4B5" height="145.6323" style="stroke: #808080; stroke-width: 1.0;" width="10" x="59" y="259.0488"/><rect fill="#FFE4B5" height="87.3794" style="stroke: #808080; stroke-width: 1.0;" width="10" x="336" y="433.8076"/><line style="stroke: #808080; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="64" x2="64" y1="82.29" y2="539.187"/><line style="stroke: #808080; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="340.5" x2="340.5" y1="82.29" y2="539.187"/><line style="stroke: #808080; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="516.5" x2="516.5" y1="82.29" y2="539.187"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="106" x="8" y="79.3369">LINE Payユーザー</text><ellipse cx="64" cy="13" fill="#32CD32" rx="8" ry="8" style="stroke: #32CD32; stroke-width: 2.0;"/><path d="M64,21 L64,48 M51,29 L77,29 M64,48 L51,63 M64,48 L77,63 " fill="none" style="stroke: #32CD32; stroke-width: 2.0;"/><rect fill="#32CD32" height="31.4536" style="stroke: #000000; stroke-width: 1.5;" width="87" x="297.5" y="49.8364"/><text fill="#FFFFFF" font-family="sans-serif" font-size="15" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="73" x="304.5" y="71.126">Merchant</text><rect fill="#32CD32" height="31.4536" style="stroke: #000000; stroke-width: 1.5;" width="81" x="476.5" y="49.8364"/><text fill="#FFFFFF" font-family="sans-serif" font-size="15" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="67" x="483.5" y="71.126">LINE Pay</text><rect fill="#FFE4B5" height="116.5059" style="stroke: #808080; stroke-width: 1.0;" width="10" x="59" y="113.4165"/><rect fill="#FFE4B5" height="145.6323" style="stroke: #808080; stroke-width: 1.0;" width="10" x="59" y="259.0488"/><rect fill="#FFE4B5" height="87.3794" style="stroke: #808080; stroke-width: 1.0;" width="10" x="336" y="433.8076"/><polygon fill="#000000" points="329,109.4165,339,113.4165,329,117.4165,333,113.4165" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="69" x2="335" y1="113.4165" y2="113.4165"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="163" x="76" y="108.6426">1. LINE Pay Checkoutで決済</text><polygon fill="#000000" points="505,138.543,515,142.543,505,146.543,509,142.543" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="341" x2="511" y1="142.543" y2="142.543"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="152" x="348" y="137.769">1.1. Request APIで決済要求</text><polygon fill="#000000" points="352,167.6694,342,171.6694,352,175.6694,348,171.6694" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="346" x2="516" y1="171.6694" y2="171.6694"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="50" x="358" y="166.8955">Success</text><polygon fill="#000000" points="80,196.7959,70,200.7959,80,204.7959,76,200.7959" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="74" x2="340" y1="200.7959" y2="200.7959"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="248" x="86" y="196.022">2. 返されたpaymentUrlを利用して決済画面に遷移</text><polygon fill="#000000" points="505,225.9224,515,229.9224,505,233.9224,509,229.9224" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="64" x2="511" y1="229.9224" y2="229.9224"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="151" x="71" y="225.1484">2.1. LINE Pay決済画面に遷移</text><polygon fill="#000000" points="505,255.0488,515,259.0488,505,263.0488,509,259.0488" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="69" x2="511" y1="259.0488" y2="259.0488"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="156" x="76" y="254.2749">3. Checkoutの配送情報を入力</text><polygon fill="#000000" points="352,284.1753,342,288.1753,352,292.1753,348,288.1753" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="346" x2="516" y1="288.1753" y2="288.1753"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="148" x="358" y="283.4014">3.1. 利用可能な配送方法を照会</text><polygon fill="#000000" points="505,313.3018,515,317.3018,505,321.3018,509,317.3018" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="341" x2="511" y1="317.3018" y2="317.3018"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="110" x="348" y="312.5278">Success (最大:100)</text><polygon fill="#000000" points="80,342.4282,70,346.4282,80,350.4282,76,346.4282" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="74" x2="516" y1="346.4282" y2="346.4282"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="178" x="86" y="341.6543">3.2. 照会された配送方法リストを表示</text><polygon fill="#000000" points="505,371.5547,515,375.5547,505,379.5547,509,375.5547" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="69" x2="511" y1="375.5547" y2="375.5547"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="274" x="76" y="370.7808">4. 決済要求を承認(決済金額、配送先、選択された配送方法)</text><polygon fill="#000000" points="75,400.6812,65,404.6812,75,408.6812,71,404.6812" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="69" x2="516" y1="404.6812" y2="404.6812"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="50" x="81" y="399.9072">Success</text><polygon fill="#000000" points="324,429.8076,334,433.8076,324,437.8076,328,433.8076" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="64" x2="330" y1="433.8076" y2="433.8076"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="191" x="71" y="429.0337">5. confirmUrlに遷移(送料、配送方法)</text><polygon fill="#000000" points="505,458.9341,515,462.9341,505,466.9341,509,462.9341" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0;" x1="346" x2="511" y1="462.9341" y2="462.9341"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="121" x="353" y="458.1602">6. Confirm APIを呼出</text><polygon fill="#000000" points="357,488.0605,347,492.0605,357,496.0605,353,492.0605" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="351" x2="516" y1="492.0605" y2="492.0605"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="50" x="363" y="487.2866">Success</text><polygon fill="#000000" points="75,517.187,65,521.187,75,525.187,71,521.187" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="69" x2="340" y1="521.187" y2="521.187"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="68" x="81" y="516.4131">6.1. 注文完了</text><!--
+@startuml
+skinparam SequenceParticipant {
+    bordercolor black
+    backgroundcolor limegreen
+    backgroundcolor<<sw>> DeepSkyBlue
+    fontcolor white
+    FontStyle bold
+    fontsize 15
+}
+skinparam Sequence {
+  lifelinebackgroundcolor Moccasin
+  lifelinebordercolor gray
+  ArrowColor #000000
+  ActorBorderColor #000000
+  ActorFontStyle Bolder
+  SequenceBoxBorderColor #3ff3f00
+  GroupBorderThickness 1
+  GroupBorderColor gray
+  GroupBodyBackgroundColor #f1f1f1
+  DividerBackgroundcolor gold
+}
+skinparam Actor {
+  BackgroundColor limegreen
+  bordercolor limegreen
+}
+skinparam Note {
+  BackgroundColor LemonChiffon
+  bordercolor gray
+}
+
+skinparam shadowing false
+hide footbox
+hide stereotype
+
+
+actor "LINE Payユーザー" as User
+participant "Merchant" as Merchant
+participant "LINE Pay" as LP
+
+User -> Merchant : 1. LINE Pay Checkoutで決済
+activate User
+Merchant -> LP : 1.1. Request APIで決済要求
+LP - -> Merchant : Success
+
+Merchant -> User : 2. 返されたpaymentUrlを利用して決済画面に遷移
+User - -> LP : 2.1. LINE Pay決済画面に遷移
+deactivate User
+
+User -> LP : 3. Checkoutの配送情報を入力
+activate User
+LP -> Merchant : 3.1. 利用可能な配送方法を照会
+Merchant - -> LP : Success (最大:100)
+LP - -> User : 3.2. 照会された配送方法リストを表示
+
+User -> LP : 4. 決済要求を承認(決済金額、配送先、選択された配送方法)
+LP - -> User : Success
+deactivate User
+
+User -> Merchant : 5. confirmUrlに遷移(送料、配送方法)
+activate Merchant
+Merchant -> LP : 6. Confirm APIを呼出
+LP - -> Merchant : Success
+Merchant - -> User : 6.1. 注文完了
+deactivate Merchant
+
+
+@enduml
+
+PlantUML version 1.2018.12(Sun Oct 21 19:15:15 KST 2018)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_77-b03
+Operating System: Linux
+OS Version: 2.6.32-642.11.1.el6.x86_64
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
