@@ -282,7 +282,7 @@ function generateCartMessage(userId) {
                         "type": "button",
                         "action": {
                             "type": "postback",
-                            "label": "LINE Pay で支払う",
+                            "label": "レジに進む",
                             "data": "type=pay",
                             "displayText": "レジに進む"
                         },
@@ -360,14 +360,12 @@ async function doPayRequest(event, userId, pay, useCheckout) {
             cancelUrl: `https://${APP_HOST_NAME}/pay/cancel`,
         },
         options: {
-            // shipping: {
-            //     type: "SHIPPING",
-            //     feeInquiryUrl: `https://${APP_HOST_NAME}/pay/shipping_methods`,
-            //     feeInquiryType: "CONDITION",
-            // },
             display: {
                 locale: "ja",
                 checkConfirmUrlBrowser: false
+            },
+            payment: {
+                capture: true
             }
         }
     }
