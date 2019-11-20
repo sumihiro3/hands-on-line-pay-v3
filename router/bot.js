@@ -20,7 +20,6 @@ const botMiddleware = lineBot.middleware(botConfig)
 const botClient = new lineBot.Client(botConfig)
 
 const APP_HOST_NAME = process.env.APP_HOST_NAME
-const PAYMENT_LIFF_URL = process.env.PAYMENT_LIFF_URL
 
 const KEYWORD_SHOW_ITEM_MESSAGE = "アイテム"
 const KEYWORD_SHOW_CART_MESSAGE = "カート"
@@ -421,7 +420,6 @@ function generatePayMessage(transactionId, reservation, paymentUrl) {
     let params = {
         url: paymentUrl
     }
-    const liffWithPaymentUrl = `${PAYMENT_LIFF_URL}?${queryString.stringify(params)}`
     const productRows = products.map(function (item) {
         let price = `${item.price * item.quantity} 円`
         let itemLabel = `${item.name} [${item.price}円 × ${item.quantity}個]`
