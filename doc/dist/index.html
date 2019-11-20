@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <meta name="theme-color" content="#4F7DC9">
   <meta charset="UTF-8">
-  <title>LINE Pay ハンズオン資料 [Version. 2019.11.03]</title>
+  <title>LINE Pay v3 ハンズオン資料 [Version. 2019.11.03]</title>
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
@@ -23,7 +23,7 @@
   <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
   <google-codelab codelab-gaid=""
                   id="dist"
-                  title="LINE Pay ハンズオン資料 [Version. 2019.11.03]"
+                  title="LINE Pay v3 ハンズオン資料 [Version. 2019.11.03]"
                   environment="web"
                   feedback-link="">
     
@@ -260,6 +260,7 @@ $ cd hands-on-line-pay-v3
 <p><strong>.env_sample ファイルを.env にリネーム</strong> し、.env ファイルに設定を記入する</p>
 <pre><code>LINE_PAY_CHANNEL_ID=XXXXXXX
 LINE_PAY_CHANNEL_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+LINE_PAY_USE_CHECKOUT=true
 LINE_BOT_CHANNEL_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 LINE_BOT_ACCESS_TOKEN=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 APP_HOST_NAME=xxxxxxxx.ngrok.io
@@ -270,11 +271,7 @@ APP_HOST_NAME=xxxxxxxx.ngrok.io
 </ul>
 </li>
 <li>LINE_PAY_CHANNEL_SECRET<br><br><ul>
-<li>LINE Pay のChannel Secret</li>
-</ul>
-</li>
-<li>LINE_PAY_CONFIRM_URL<br><br><ul>
-<li>https://XXXXXXXX.ngrok.io/pay/confirm<br>LINE_PAY_USE_CHECKOUT</li>
+<li>LINE Pay のChannel Secret<br>LINE_PAY_USE_CHECKOUT</li>
 <li>true<br><br><ul>
 <li><strong>LINE Pay 残高がない場合は false を指定してください</strong></li>
 </ul>
@@ -287,6 +284,10 @@ APP_HOST_NAME=xxxxxxxx.ngrok.io
 </li>
 <li>LINE_BOT_ACCESS_TOKEN<br><br><ul>
 <li>LINE Bot のアクセストークン</li>
+</ul>
+</li>
+<li>APP_HOST_NAME<br><br><ul>
+<li>ngrok のURL</li>
 </ul>
 </li>
 </ul>
@@ -321,12 +322,12 @@ APP_HOST_NAME=xxxxxxxx.ngrok.io
 <p>画面下部のリッチメニューで、左側の「商品を見る」を選択すると商品一覧が表示される</p>
 <p class="image-container"><img alt="商品一覧" src="img/a4d498360a62e3a2.png"></p>
 <p>任意の商品の個数を選択すると、カートに投入される</p>
-<p class="image-container"><img alt="カート" src="img/71c561cabd27e698.png"></p>
-<p><em>複数の商品をカートに投入し、まとめて決済することも可能です</em></p>
+<p class="image-container"><img alt="カート" src="img/d25e7f6e297abf54.png"></p>
+<p><em>複数の商品をカートに投入し、まとめて決済することもできる</em></p>
 <h2 is-upgraded>10-2. LINE Pay 決済を体験</h2>
-<p>カートにある「LINE Pay で支払う」ボタンを押下すると決済が始まる</p>
-<p class="image-container"><img alt="カート" src="img/71c561cabd27e698.png"></p>
-<p>このボタンを押下するとLINE Pay の決済リクエストAPI が実行される</p>
+<p>カートにある「レジに進む」ボタンを押下すると決済が始まる</p>
+<p class="image-container"><img alt="カート" src="img/d25e7f6e297abf54.png"></p>
+<p>「レジに進む」ボタンを押下するとLINE Pay の決済リクエストAPI が実行される</p>
 <p>レジが表示されるので、「LINE Pay で決済」ボタンを押下すると、決済リクエストAPI で返された「決済URL（paymentUrl）」のページ（LINE Pay の決済画面）にアクセスする</p>
 <p class="image-container"><img alt="レジ" src="img/4e02b22c9f18f80c.png"></p>
 <p>LINE Pay の決済画面では選択した商品が表示される</p>
