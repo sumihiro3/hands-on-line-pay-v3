@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <meta name="theme-color" content="#4F7DC9">
   <meta charset="UTF-8">
-  <title>LINE Pay v3 ハンズオン資料 [Version. 2019.11.03]</title>
+  <title>LINE Pay v3 ハンズオン資料 [Version. 2019.11.22]</title>
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
@@ -23,7 +23,7 @@
   <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
   <google-codelab codelab-gaid=""
                   id="dist"
-                  title="LINE Pay v3 ハンズオン資料 [Version. 2019.11.03]"
+                  title="LINE Pay v3 ハンズオン資料 [Version. 2019.11.22]"
                   environment="web"
                   feedback-link="">
     
@@ -34,7 +34,7 @@
 <p>LINE Pay の加盟店になるには法人でなくとも大丈夫です。個人で加盟店申請するには、個人事業主として開業届を出して青色申告をしてあればOKです。<br>LINE Pay 公式の「よくある質問」にも、個人事業主でも加入できると書いてあります。</p>
 <p><a href="https://pay.line.me/jp/intro/faq?locale=ja_JP&sequences=14" target="_blank">個人事業主も加入できますか？：よくある質問＠LINE Pay</a></p>
 <p><strong>その他、詳しい申請方法は </strong><a href="https://miso-develop.booth.pm/items/1573526" target="_blank"><strong>LINE API HANDBOOK</strong></a><strong> の第11章に書いてありますので、ぜひ読んでください！</strong></p>
-<p class="image-container"><img alt="LINE API HANDBOOK" src="img/ebe30605e2c51b47.jpeg"></p>
+<p class="image-container"><img alt="LINE API HANDBOOK" src="img\ebe30605e2c51b47.jpeg"></p>
 
 
       </google-codelab-step>
@@ -42,7 +42,7 @@
       <google-codelab-step label="「Checkout」を利用した際の決済処理の流れ" duration="0">
         <p>LINE Payで提供する多様な決済手段(残高、クレジットカード、銀行口座、LINEポイント)と、LINEのユーザー情報（Profile+）を利用することで、決済と注文や配送方法の選択などを簡単に行うことができます。</p>
 <h2 is-upgraded>2-1. Checkout を利用した決済の流れ</h2>
-<p class="image-container"><img alt="Checkout を利用した決済の流れ" src="img/b6e2a3cc2ad8d3c6.png"></p>
+<p class="image-container"><img alt="Checkout を利用した決済の流れ" src="img\b6e2a3cc2ad8d3c6.png"></p>
 <h3 is-upgraded>1 決済リクエスト</h3>
 <p>LINE Pay 決済を行う前に、サービスプロバイダーの状態が正常であるかを判断し、決済をリクエストします。<br>この際、加盟店側は配送方法と送料を照会できるAPI (Inquiry ShippingMethods API) を実装して、LINE Pay 側に提供する必要があります。<br>リクエスト成功したら、決済完了/払い戻しするまで使用する「取引番号（transactionId）」と、決済を実行する「決済URL（paymentUrl）」が発行されます。</p>
 <h3 is-upgraded>2 承認画面への遷移</h3>
@@ -63,10 +63,10 @@
         <p>実際に決済するには加盟店登録が必要ですが、開発して動作を確認するフェーズであればSandbox が利用できます。こちらは下記のURLから申請すると、Sandbox 用のLINE Pay API アカウントが払い出されますので、誰でもすぐに利用できます。</p>
 <p><strong>今回のハンズオンでは予めSandbox 環境を準備頂いていますので、下記のステップは不要です。ハンズオン後に、お手元で開発等を行われる際に申請が必要となりますので、ご参照ください。</strong></p>
 <h2 is-upgraded>3-1. LINE Pay Sandboxの申請</h2>
-<p class="image-container"><img alt="Sandbox の申請" src="img/2450f40d4f50a1fa.png"></p>
+<p class="image-container"><img alt="Sandbox の申請" src="img\2450f40d4f50a1fa.png"></p>
 <p><a href="https://pay.line.me/jp/developers/techsupport/sandbox/creation?locale=ja_JP" target="_blank">こちら</a> からSandbox環境の利用申請ができます。<br>メールアドレスを入力して「Submit」ボタンを押下するとアカウント情報が払い出されます。</p>
 <h2 is-upgraded>3-2. キー情報の確認</h2>
-<p>アカウントが払い出されたら<a href="https://pay.line.me/login/" target="_blank">LINE Pay コンソール</a> の決済連動管理 &gt; 連動キー管理からChannel ID とChannel Secret Key を確認します。これらの値はLINE Pay のAPI コールに必要になります。<br>メモしておいてください。<br><img alt="連動キー管理" src="img/94351f3d250138ac.png"></p>
+<p>アカウントが払い出されたら<a href="https://pay.line.me/login/" target="_blank">LINE Pay コンソール</a> の決済連動管理 &gt; 連動キー管理からChannel ID とChannel Secret Key を確認します。これらの値はLINE Pay のAPI コールに必要になります。<br>メモしておいてください。<br><img alt="連動キー管理" src="img\94351f3d250138ac.png"></p>
 <h2 is-upgraded>3-3. 技術ドキュメント</h2>
 <p>LINE Pay API の詳細な情報は、<a href="https://pay.line.me/jp/developers/apis/onlineApis?locale=ja_JP" target="_blank">ここ</a> にあります。</p>
 
@@ -96,16 +96,16 @@ Forwarding                    https://xxxxxx.ngrok.io -&gt; http://localhost:500
     
       <google-codelab-step label="チャネルの作成" duration="0">
         <h2 is-upgraded>5-1. LINE Developers にログイン</h2>
-<p><a href="https://developers.line.biz/ja/" target="_blank">LINE Developers</a> にアクセスしてログイン<br><img alt="LINE Developers" src="img/ce8309d565a82ce5.png"></p>
+<p><a href="https://developers.line.biz/ja/" target="_blank">LINE Developers</a> にアクセスしてログイン<br><img alt="LINE Developers" src="img\ce8309d565a82ce5.png"></p>
 <h2 is-upgraded>5-2. プロバイダーを選択</h2>
-<p>任意のプロバイダーを選択<br><img alt="プロバイダー選択" src="img/4f01ad2bc958885d.png"></p>
+<p>任意のプロバイダーを選択<br><img alt="プロバイダー選択" src="img\4f01ad2bc958885d.png"></p>
 <h3 is-upgraded>プロバイダー未作成の人は画面右上の「新規プロバイダー作成」ボタンを押下して新規作成してください。</h3>
 <p><em>任意の「プロバイダー名」を入力して作成</em></p>
 <h2 is-upgraded>5-3. チャネルを新規作成</h2>
 <h3 is-upgraded>Botのチャネルを作成</h3>
-<p class="image-container"><img alt="チャネル作成" src="img/2a8b8249ff31da44.png"></p>
+<p class="image-container"><img alt="チャネル作成" src="img\2a8b8249ff31da44.png"></p>
 <h3 is-upgraded>「Messaging API」 を選択</h3>
-<p class="image-container"><img alt="Messaging API" src="img/e9db29c175ee735f.png"></p>
+<p class="image-container"><img alt="Messaging API" src="img\e9db29c175ee735f.png"></p>
 <h3 is-upgraded>チャネル情報を入力</h3>
 <p>チャネル情報を入力して、「入力内容を確認する」ボタンを押下する。</p>
 <h4 is-upgraded>チャネル情報の入力例</h4>
@@ -131,9 +131,9 @@ Forwarding                    https://xxxxxx.ngrok.io -&gt; http://localhost:500
 </ul>
 </li>
 </ul>
-<p class="image-container"><img alt="チャネルの情報を入力" src="img/823efd30324ca7ea.png"></p>
+<p class="image-container"><img alt="チャネルの情報を入力" src="img\823efd30324ca7ea.png"></p>
 <h3 is-upgraded>各種規約に同意してチャネルを作成する</h3>
-<p class="image-container"><img alt="各種規約に同意" src="img/6b45569c1394f655.png"></p>
+<p class="image-container"><img alt="各種規約に同意" src="img\6b45569c1394f655.png"></p>
 
 
       </google-codelab-step>
@@ -141,25 +141,25 @@ Forwarding                    https://xxxxxx.ngrok.io -&gt; http://localhost:500
       <google-codelab-step label="チャネルの設定" duration="0">
         <h2 is-upgraded>6-1. チャネル基本情報画面を開く</h2>
 <p>作成したチャネルを選択してチャネル基本情報画面を開く</p>
-<p class="image-container"><img alt="チャネルを選択" src="img/3cdb0ebbafa1fb1.png"></p>
+<p class="image-container"><img alt="チャネルを選択" src="img\3cdb0ebbafa1fb1.png"></p>
 <h2 is-upgraded>6-2. Channel Secret をメモしておく</h2>
 <p>チャネル基本情報画面に表示されているChannel Secret をメモしておく</p>
-<p class="image-container"><img alt="CopyChannelSecret" src="img/166b3eb938b395ff.png"></p>
+<p class="image-container"><img alt="CopyChannelSecret" src="img\166b3eb938b395ff.png"></p>
 <h2 is-upgraded>6-3. アクセストークン を発行してメモしておく</h2>
 <p>アクセストークンの「再発行」ボタンを押下して発行し、メモしておく</p>
-<p class="image-container"><img alt="GenerateToken" src="img/54bfa1030fa2b80a.png"></p>
+<p class="image-container"><img alt="GenerateToken" src="img\54bfa1030fa2b80a.png"></p>
 <h2 is-upgraded>6-4. Webhook 設定</h2>
 <p>Webhook送信 を「利用する」に設定して更新ボタンを押下する</p>
-<p class="image-container"><img alt="Webhook" src="img/1cff51a73021f700.png"></p>
+<p class="image-container"><img alt="Webhook" src="img\1cff51a73021f700.png"></p>
 <h2 is-upgraded>6-5. Webhook URL設定</h2>
 <p>Webhook URL に4-1 でメモした <strong>ngrok のURL + /bot を入力して</strong> 更新ボタンを押下する</p>
 <ul>
 <li>&#34;https://&#34; は入力不要です</li>
 </ul>
-<p class="image-container"><img alt="Webhook URL" src="img/c51c25fb2229b906.png"></p>
+<p class="image-container"><img alt="Webhook URL" src="img\c51c25fb2229b906.png"></p>
 <h2 is-upgraded>6-6. 自動応答メッセージ設定</h2>
 <p>自動応答メッセージ の画面右側にある「設定はこちら」リンクを押下して、公式アカウントマネージャー画面を開く</p>
-<p class="image-container"><img alt="自動応答メッセージ" src="img/266a6b0c06bd5876.png"></p>
+<p class="image-container"><img alt="自動応答メッセージ" src="img\266a6b0c06bd5876.png"></p>
 <p>応答設定の詳細設定</p>
 <ul>
 <li>応答メッセージ<br><br><ul>
@@ -171,72 +171,16 @@ Forwarding                    https://xxxxxx.ngrok.io -&gt; http://localhost:500
 </ul>
 </li>
 </ul>
-<p class="image-container"><img alt="応答メッセージ" src="img/8d142e782ff8f1b7.png"></p>
+<p class="image-container"><img alt="応答メッセージ" src="img\8d142e782ff8f1b7.png"></p>
 <h2 is-upgraded>6-7. 作成したBotのチャネルを友だち登録する</h2>
 <p>LINEアプリへのQRコードをLINEアプリで読み込んで友だち登録する</p>
-<p class="image-container"><img alt="BotQRCode" src="img/ae470c8ebc510924.png"></p>
+<p class="image-container"><img alt="BotQRCode" src="img\ae470c8ebc510924.png"></p>
 
 
       </google-codelab-step>
     
-      <google-codelab-step label="リッチメニューの設定" duration="0">
-        <h2 is-upgraded>7-1. リッチメニューを作成する</h2>
-<p>Bot の画面に表示するメニュー（リッチメニュー）の表示設定をします</p>
-<p>公式アカウントマネージャーの「ホーム」タブ→「リッチメニュー」を選択し、リッチメニューの「作成」ボタンを押下する</p>
-<p class="image-container"><img alt="リッチメニュー" src="img/7c30a2057623ccac.png"></p>
-<h2 is-upgraded>7-2. リッチメニューの表示設定</h2>
-<p>リッチメニューのタイトルと、表示期間を入力する</p>
-<p>入力例）</p>
-<ul>
-<li>タイトル<br><br><ul>
-<li>リッチメニュー</li>
-</ul>
-</li>
-<li>表示期間<br><br><ul>
-<li>2019/11/01  00:00</li>
-<li>2021/01/01  00:00</li>
-</ul>
-</li>
-</ul>
-<p class="image-container"><img alt="リッチメニュー" src="img/75f1abd9aa85b071.png"></p>
-<h2 is-upgraded>7-3. リッチメニューのテンプレート設定</h2>
-<p>リッチメニューの大きさと、ボタン領域・数を設定する</p>
-<p class="image-container"><img alt="リッチメニュー" src="img/56adf94258774875.png"></p>
-<p>コンテンツ設定 の左側にある「テンプレートを選択」を押下して、リッチメニューのテンプレートタイプを選択する</p>
-<p class="image-container"><img alt="リッチメニュー" src="img/1d84d92b65f19bb5.png"></p>
-<p>今回は右下にある、サイズ小で、ボタン領域が２つあるテンプレートを選択する</p>
-<h2 is-upgraded>7-5. リッチメニューのアクション設定</h2>
-<p>ユーザーがリッチメニューを押下した際の挙動を設定する</p>
-<p>今回は、各領域選択時にテキストメッセージが送信されるように設定する</p>
-<p>左側の領域選択時に「アイテム」、右側領域選択時に「カート」というテキストメッセージが送信されるよう、下記のように設定する</p>
-<ul>
-<li>領域A<br><br><ul>
-<li>タイプ：テキスト</li>
-<li>テキスト：アイテム</li>
-</ul>
-</li>
-<li>領域B<br><br><ul>
-<li>タイプ：テキスト</li>
-<li>テキスト：カート</li>
-</ul>
-</li>
-</ul>
-<p class="image-container"><img alt="リッチメニュー" src="img/56adf94258774875.png"></p>
-<h2 is-upgraded>7-6. リッチメニューの背景画像設定</h2>
-<p>リッチメニュー領域に表示させる画像を設定する</p>
-<p>コンテンツ設定 の左側にある「背景画像をアップロード」を押下して、画像をアップロードする</p>
-<p class="image-container"><img alt="リッチメニュー" src="img/f71529f6dbe39dab.png"></p>
-<p>リッチメニュー用の画像は、images/RichMenu.png を利用する</p>
-<h2 is-upgraded>7-7. リッチメニューの保存</h2>
-<p>すべて設定できていれば、画面したの「保存」ボタンが有効化されるので、ボタンを押下して設定を保存する</p>
-<p class="image-container"><img alt="リッチメニュー" src="img/3110f3621c02ea21.png"></p>
-<p>LINE アプリでBot を表示すると、画面下にリッチメニューが表示されます</p>
-
-
-      </google-codelab-step>
-    
-      <google-codelab-step label="実装と実行" duration="0">
-        <h2 is-upgraded>8-1. git clone</h2>
+      <google-codelab-step label="サンプルプログラムのダウンロード" duration="0">
+        <h2 is-upgraded>7-1. git clone</h2>
 <p>ハンズオン用に適当なディレクトリを作成して、そこへソースコードをgit clone する</p>
 <p>クローンできたら、ダウンロードしたディレクトリをVisualStucioCode で開いておく</p>
 <h3 is-upgraded>Mac</h3>
@@ -252,11 +196,72 @@ $ cd hands-on-line-pay-v3
 </code></pre>
 <h3 is-upgraded>git clone 出来ない場合はリポジトリ内容をZIPファイルでダウンロード</h3>
 <p>git clone 出来ない場合は、<a href="https://github.com/sumihiro3/hands-on-line-pay-v3.git" target="_blank">リポジトリのページ</a>にアクセスして、ページ右側の「Clone or download」ボタンを押下、「Download ZIP」ボタンを押下してリポジトリのZIPファイルをダウンロードし、適当なディレクトリに展開してください。</p>
-<p class="image-container"><img alt="DownloadGitZip" src="img/ba3358c2aa381667.png"></p>
-<h2 is-upgraded>8-2. プログラムに必要なモジュールをインストール</h2>
+<p class="image-container"><img alt="DownloadGitZip" src="img\ba3358c2aa381667.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="リッチメニューの設定" duration="0">
+        <h2 is-upgraded>8-1. リッチメニューを作成する</h2>
+<p>Bot の画面に表示するメニュー（リッチメニュー）の表示設定をします</p>
+<p>公式アカウントマネージャーの「ホーム」タブ→「リッチメニュー」を選択し、リッチメニューの「作成」ボタンを押下する</p>
+<p class="image-container"><img alt="リッチメニュー" src="img\7c30a2057623ccac.png"></p>
+<h2 is-upgraded>8-2. リッチメニューの表示設定</h2>
+<p>リッチメニューのタイトルと、表示期間を入力する</p>
+<p>入力例）</p>
+<ul>
+<li>タイトル<br><br><ul>
+<li>リッチメニュー</li>
+</ul>
+</li>
+<li>表示期間<br><br><ul>
+<li>2019/11/01  00:00</li>
+<li>2021/01/01  00:00</li>
+</ul>
+</li>
+</ul>
+<p class="image-container"><img alt="リッチメニュー" src="img\75f1abd9aa85b071.png"></p>
+<h2 is-upgraded>8-3. リッチメニューのテンプレート設定</h2>
+<p>リッチメニューの大きさと、ボタン領域・数を設定する</p>
+<p class="image-container"><img alt="リッチメニュー" src="img\56adf94258774875.png"></p>
+<p>コンテンツ設定 の左側にある「テンプレートを選択」を押下して、リッチメニューのテンプレートタイプを選択する</p>
+<p class="image-container"><img alt="リッチメニュー" src="img\1d84d92b65f19bb5.png"></p>
+<p>今回は右下にある、サイズ小で、ボタン領域が２つあるテンプレートを選択する</p>
+<h2 is-upgraded>8-5. リッチメニューのアクション設定</h2>
+<p>ユーザーがリッチメニューを押下した際の挙動を設定する</p>
+<p>今回は、各領域選択時にテキストメッセージが送信されるように設定する</p>
+<p>左側の領域選択時に「アイテム」、右側領域選択時に「カート」というテキストメッセージが送信されるよう、下記のように設定する</p>
+<ul>
+<li>領域A<br><br><ul>
+<li>タイプ：テキスト</li>
+<li>テキスト：アイテム</li>
+</ul>
+</li>
+<li>領域B<br><br><ul>
+<li>タイプ：テキスト</li>
+<li>テキスト：カート</li>
+</ul>
+</li>
+</ul>
+<p class="image-container"><img alt="リッチメニュー" src="img\56adf94258774875.png"></p>
+<h2 is-upgraded>8-6. リッチメニューの背景画像設定</h2>
+<p>リッチメニュー領域に表示させる画像を設定する</p>
+<p>コンテンツ設定 の左側にある「背景画像をアップロード」を押下して、画像をアップロードする</p>
+<p class="image-container"><img alt="リッチメニュー" src="img\f71529f6dbe39dab.png"></p>
+<p>リッチメニュー用の画像は、サンプルプログラムの images/RichMenu.png を利用する</p>
+<h2 is-upgraded>8-7. リッチメニューの保存</h2>
+<p>すべて設定できていれば、画面したの「保存」ボタンが有効化されるので、ボタンを押下して設定を保存する</p>
+<p class="image-container"><img alt="リッチメニュー" src="img\3110f3621c02ea21.png"></p>
+<p>LINE アプリでBot を表示すると、画面下にリッチメニューが表示されます</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="実装と実行" duration="0">
+        <h2 is-upgraded>9-1. プログラムに必要なモジュールをインストール</h2>
 <pre><code>$ npm install
 </code></pre>
-<h2 is-upgraded>8-3. メモしておいた設定を、設定ファイルに記入する</h2>
+<h2 is-upgraded>9-2. メモしておいた設定を、設定ファイルに記入する</h2>
 <p><strong>.env_sample ファイルを.env にリネーム</strong> し、.env ファイルに設定を記入する</p>
 <pre><code>LINE_PAY_CHANNEL_ID=XXXXXXX
 LINE_PAY_CHANNEL_SECRET=XXXXXXXXXXXXXXXXXXXXXXXXXXXX
@@ -291,62 +296,67 @@ APP_HOST_NAME=xxxxxxxx.ngrok.io
 </ul>
 </li>
 </ul>
-<h2 is-upgraded>8-4. プログラムを起動</h2>
+<h2 is-upgraded>9-3. プログラムを起動</h2>
+<p>ターミナルまたはコマンドプロンプトにて、サンプルプログラムをclone （または展開）したディレクトリに移動する。</p>
+<h3 is-upgraded>Mac</h3>
 <pre><code>$ npm run start
+</code></pre>
+<h3 is-upgraded>Windows</h3>
+<pre><code>&gt; npm run windowsDebug
 </code></pre>
 
 
       </google-codelab-step>
     
       <google-codelab-step label="Profile&#43; の設定" duration="0">
-        <h2 is-upgraded>9-1. LINE Profile+ とは</h2>
+        <h2 is-upgraded>10-1. LINE Profile+ とは</h2>
 <p>あらかじめLINE に登録しておいたプロフィール情報を外部のサイトやLINE の関連サイトで利用できるサービスのこと。<br>LINE Pay のCheckout では、配送先を指定する際に利用できます。</p>
 <p>個々のサービスでの登録ではなく、LINE Checkout などを利用したサービスで共通して利用できる情報となるので、煩わしい入力が不要となります。</p>
-<h2 is-upgraded>9-2. LINE Profile+ の設定方法</h2>
+<h2 is-upgraded>10-2. LINE Profile+ の設定方法</h2>
 <p>LINE アプリの「ホーム」→「設定（歯車アイコン）」→「プロフィール」→「LINE Profile+」と遷移すると設定画面が表示されます。</p>
-<p class="image-container"><img alt="LINE Profile+" src="img/f0d09b6ff2c2c615.png"></p>
+<p class="image-container"><img alt="LINE Profile+" src="img\f0d09b6ff2c2c615.png"></p>
 <p>上記のLINE Profile+ 画面が表示されるので「はじめる」をタップして、必要な情報を入力します。</p>
 <ul>
 <li>氏名（漢字とフリガナ）</li>
 <li>住所（郵便番号と詳細住所）</li>
 </ul>
-<p class="image-container"><img alt="LINE Profile+" src="img/d23d5a528e02babb.png"></p>
+<p class="image-container"><img alt="LINE Profile+" src="img\d23d5a528e02babb.png"></p>
 
 
       </google-codelab-step>
     
       <google-codelab-step label="BotでLINE Pay を試してみよう" duration="0">
-        <h2 is-upgraded>10-1. 商品を選択する</h2>
+        <h2 is-upgraded>11-1. 商品を選択する</h2>
 <p>LINE アプリで作成したBot のトーク画面を開く</p>
-<p class="image-container"><img alt="リッチメニュー" src="img/44ba7a809ce622e.png"></p>
+<p class="image-container"><img alt="リッチメニュー" src="img\44ba7a809ce622e.png"></p>
 <p>画面下部のリッチメニューで、左側の「商品を見る」を選択すると商品一覧が表示される</p>
-<p class="image-container"><img alt="商品一覧" src="img/a4d498360a62e3a2.png"></p>
+<p class="image-container"><img alt="商品一覧" src="img\a4d498360a62e3a2.png"></p>
 <p>任意の商品の個数を選択すると、カートに投入される</p>
-<p class="image-container"><img alt="カート" src="img/d25e7f6e297abf54.png"></p>
+<p class="image-container"><img alt="カート" src="img\d25e7f6e297abf54.png"></p>
 <p><em>複数の商品をカートに投入し、まとめて決済することもできる</em></p>
-<h2 is-upgraded>10-2. LINE Pay 決済を体験</h2>
+<h2 is-upgraded>11-2. LINE Pay 決済を体験</h2>
 <p>カートにある「レジに進む」ボタンを押下すると決済が始まる</p>
-<p class="image-container"><img alt="カート" src="img/d25e7f6e297abf54.png"></p>
+<p class="image-container"><img alt="カート" src="img\d25e7f6e297abf54.png"></p>
 <p>「レジに進む」ボタンを押下するとLINE Pay の決済リクエストAPI が実行される</p>
 <p>レジが表示されるので、「LINE Pay で決済」ボタンを押下すると、決済リクエストAPI で返された「決済URL（paymentUrl）」のページ（LINE Pay の決済画面）にアクセスする</p>
-<p class="image-container"><img alt="レジ" src="img/4e02b22c9f18f80c.png"></p>
+<p class="image-container"><img alt="レジ" src="img\4e02b22c9f18f80c.png"></p>
 <p>LINE Pay の決済画面では選択した商品が表示される</p>
 <p>複数選択した場合は、それぞれの数量と金額も表示される</p>
-<p class="image-container"><img alt="決済画面" src="img/7e524858c865432.png"></p>
+<p class="image-container"><img alt="決済画面" src="img\7e524858c865432.png"></p>
 <p>また、画面中ほどでお届け先が設定できる</p>
 <p>初期値として、LINE Profile+ で設定した氏名などが予め入力されている</p>
-<p class="image-container"><img alt="お届け先" src="img/37a4468469822186.png"></p>
+<p class="image-container"><img alt="お届け先" src="img\37a4468469822186.png"></p>
 <p>お届け先の下では配送方法が選択できる</p>
 <p>ここに表示されている配送方法は、Inquiry ShippingMethods API を実装することで、加盟店側が配送先や購入品に応じて任意の配送方法を表示することができる</p>
-<p class="image-container"><img alt="配送方法" src="img/1d0cb270ddb1c2cd.png"></p>
+<p class="image-container"><img alt="配送方法" src="img\1d0cb270ddb1c2cd.png"></p>
 <p>配送情報などが問題なければ「XX円を支払う」ボタンを押下して最終確認へ進む</p>
-<p class="image-container"><img alt="決済承認" src="img/892baf0fd0180de5.png"></p>
+<p class="image-container"><img alt="決済承認" src="img\892baf0fd0180de5.png"></p>
 <p>内容を確認して「決済」ボタンを押下して決済を承認する</p>
-<p class="image-container"><img alt="決済完了" src="img/1e302cb62e27ac3d.png"></p>
-<p class="image-container"><img alt="決済完了" src="img/8626158173fde4d2.png"></p>
+<p class="image-container"><img alt="決済完了" src="img\1e302cb62e27ac3d.png"></p>
+<p class="image-container"><img alt="決済完了" src="img\8626158173fde4d2.png"></p>
 <p>決済が完了すると、サーバーサイドのConfirm URL へWebhook が送信される</p>
 <p>承認実行（confirm API）を行うと決済が完了し、トーク画面へメッセージを送信します（Push API）</p>
-<p class="image-container"><img alt="決済完了" src="img/116199fdb3f798a4.png"></p>
+<p class="image-container"><img alt="決済完了" src="img\116199fdb3f798a4.png"></p>
 
 
       </google-codelab-step>
