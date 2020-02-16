@@ -369,7 +369,7 @@ LINE_PAY_USE_CHECKOUT
 #### Mac
 
 ```bash
-$ npm run start
+$ npm run debug
 ```
 
 #### Windows
