@@ -130,9 +130,10 @@ Forwarding                    https://xxxxxx.ngrok.io -> http://localhost:5000
 ![プロバイダー選択](images/ProviderList.png)
 
 
-#### プロバイダー未作成の人は画面右上の「新規プロバイダー作成」ボタンを押下して新規作成してください。
+#### プロバイダー未作成の人は画面上の「作成」ボタンを押下して新規作成してください。
 
-*任意の「プロバイダー名」を入力して作成*
+- *任意の「プロバイダー名」を入力して作成*
+    - *LINE* という文字列は含められません
 
 ### 5-3. チャネルを新規作成
 
@@ -178,17 +179,19 @@ Forwarding                    https://xxxxxx.ngrok.io -> http://localhost:5000
 
 チャネル基本情報画面に表示されているChannel Secret をメモしておく
 
-![CopyChannelSecret](images/CopyChannelSecret.png)
+![CopyChannelSecret](images/CopyChannelSecret_01.png)
 
-### 6-3. アクセストークン を発行してメモしておく
+![CopyChannelSecret](images/CopyChannelSecret_02.png)
 
-アクセストークンの「再発行」ボタンを押下して発行し、メモしておく
+### 6-3. チャネルアクセストークン を発行してメモしておく
+
+「Messaging API設定」タブ内にある、チャネルアクセストークンの「発行」ボタンを押下して発行し、メモしておく
 
 ![GenerateToken](images/GenerateToken.png)
 
 ### 6-4. Webhook 設定
 
-Webhook送信 を「利用する」に設定して更新ボタンを押下する
+「Webhookの利用」のラジオボタンを有効化する
 
 ![Webhook](images/WebhookSetting.png)
 
@@ -196,30 +199,42 @@ Webhook送信 を「利用する」に設定して更新ボタンを押下する
 
 Webhook URL に4-1 でメモした **ngrok のURL + /bot を入力して** 更新ボタンを押下する
 
-- "https://" は入力不要です
+- "https://" から入力が必要です
 
 ![Webhook URL](images/WebhookURL.png)
 
-### 6-6. 自動応答メッセージ設定
+### 6-6. 応答設定
 
-自動応答メッセージ の画面右側にある「設定はこちら」リンクを押下して、公式アカウントマネージャー画面を開く
+LINE公式アカウント機能 の画面右側にある「編集」リンクを押下して、公式アカウントマネージャー画面を開く
 
-![自動応答メッセージ](images/MessageSetting01.png)
+![公式アカウントマネージャー画面](images/MessageSetting01.png)
 
-応答設定の詳細設定
+#### 応答設定画面を開く
 
+公式アカウントマネージャー画面左の「応答設定」を選択して応答設定画面を開く
+
+![応答設定](images/MessageSetting02.png)
+
+応答設定を下記のように設定する
+
+- 応答モード
+    - Bot
+- あいさつメッセージ
+    - オン
 - 応答メッセージ
     - オフ
 - Webhook
     - オン
 
-![応答メッセージ](images/MessageSetting02.png)
+![応答設定](images/MessageSetting03.png)
 
 ### 6-7. 作成したBotのチャネルを友だち登録する
 
-LINEアプリへのQRコードをLINEアプリで読み込んで友だち登録する
+LINE Bot へのQR コードをLINEアプリで読み込んで友だち登録する
 
 ![BotQRCode](images/BotQRCode.png)
+
+*LINE Bot へのQR コードは、LINE Developers の「Messaging API 設定」タブにあります*
 
 
 ## サンプルプログラムのダウンロード
@@ -274,7 +289,7 @@ Bot の画面に表示するメニュー（リッチメニュー）の表示設�
 - タイトル
     - リッチメニュー
 - 表示期間
-    - 2019/11/01  00:00
+    - 2020/01/01  00:00
     - 2021/01/01  00:00
 
 ![リッチメニュー](images/RichMenu02.png)

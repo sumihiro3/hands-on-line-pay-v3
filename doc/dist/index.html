@@ -98,14 +98,19 @@ Forwarding                    https://xxxxxx.ngrok.io -&gt; http://localhost:500
         <h2 is-upgraded>5-1. LINE Developers にログイン</h2>
 <p><a href="https://developers.line.biz/ja/" target="_blank">LINE Developers</a> にアクセスしてログイン<br><img alt="LINE Developers" src="img/ce8309d565a82ce5.png"></p>
 <h2 is-upgraded>5-2. プロバイダーを選択</h2>
-<p>任意のプロバイダーを選択<br><img alt="プロバイダー選択" src="img/4f01ad2bc958885d.png"></p>
-<h3 is-upgraded>プロバイダー未作成の人は画面右上の「新規プロバイダー作成」ボタンを押下して新規作成してください。</h3>
-<p><em>任意の「プロバイダー名」を入力して作成</em></p>
+<p>任意のプロバイダーを選択<br><img alt="プロバイダー選択" src="img/e073087661456a96.png"></p>
+<h3 is-upgraded>プロバイダー未作成の人は画面上の「作成」ボタンを押下して新規作成してください。</h3>
+<ul>
+<li><em>任意の「プロバイダー名」を入力して作成</em><ul>
+<li><em>LINE</em> という文字列は含められません</li>
+</ul>
+</li>
+</ul>
 <h2 is-upgraded>5-3. チャネルを新規作成</h2>
 <h3 is-upgraded>Botのチャネルを作成</h3>
-<p class="image-container"><img alt="チャネル作成" src="img/2a8b8249ff31da44.png"></p>
+<p class="image-container"><img alt="チャネル作成" src="img/4a0d01508b27906c.png"></p>
 <h3 is-upgraded>「Messaging API」 を選択</h3>
-<p class="image-container"><img alt="Messaging API" src="img/e9db29c175ee735f.png"></p>
+<p class="image-container"><img alt="Messaging API" src="img/c0339fd191273fee.png"></p>
 <h3 is-upgraded>チャネル情報を入力</h3>
 <p>チャネル情報を入力して、「入力内容を確認する」ボタンを押下する。</p>
 <h4 is-upgraded>チャネル情報の入力例</h4>
@@ -141,27 +146,39 @@ Forwarding                    https://xxxxxx.ngrok.io -&gt; http://localhost:500
       <google-codelab-step label="チャネルの設定" duration="0">
         <h2 is-upgraded>6-1. チャネル基本情報画面を開く</h2>
 <p>作成したチャネルを選択してチャネル基本情報画面を開く</p>
-<p class="image-container"><img alt="チャネルを選択" src="img/3cdb0ebbafa1fb1.png"></p>
+<p class="image-container"><img alt="チャネルを選択" src="img/a23a6e725106c6dd.png"></p>
 <h2 is-upgraded>6-2. Channel Secret をメモしておく</h2>
 <p>チャネル基本情報画面に表示されているChannel Secret をメモしておく</p>
-<p class="image-container"><img alt="CopyChannelSecret" src="img/166b3eb938b395ff.png"></p>
-<h2 is-upgraded>6-3. アクセストークン を発行してメモしておく</h2>
-<p>アクセストークンの「再発行」ボタンを押下して発行し、メモしておく</p>
-<p class="image-container"><img alt="GenerateToken" src="img/54bfa1030fa2b80a.png"></p>
+<p class="image-container"><img alt="CopyChannelSecret" src="img/52625f0f1b1567af.png"></p>
+<p class="image-container"><img alt="CopyChannelSecret" src="img/aaa283965c2b1380.png"></p>
+<h2 is-upgraded>6-3. チャネルアクセストークン を発行してメモしておく</h2>
+<p>「Messaging API設定」タブ内にある、チャネルアクセストークンの「発行」ボタンを押下して発行し、メモしておく</p>
+<p class="image-container"><img alt="GenerateToken" src="img/90ae89399c7d6b38.png"></p>
 <h2 is-upgraded>6-4. Webhook 設定</h2>
-<p>Webhook送信 を「利用する」に設定して更新ボタンを押下する</p>
-<p class="image-container"><img alt="Webhook" src="img/1cff51a73021f700.png"></p>
+<p>「Webhookの利用」のラジオボタンを有効化する</p>
+<p class="image-container"><img alt="Webhook" src="img/acce22964733cdf8.png"></p>
 <h2 is-upgraded>6-5. Webhook URL設定</h2>
 <p>Webhook URL に4-1 でメモした <strong>ngrok のURL + /bot を入力して</strong> 更新ボタンを押下する</p>
 <ul>
-<li>&#34;https://&#34; は入力不要です</li>
+<li>&#34;https://&#34; から入力が必要です</li>
 </ul>
-<p class="image-container"><img alt="Webhook URL" src="img/c51c25fb2229b906.png"></p>
-<h2 is-upgraded>6-6. 自動応答メッセージ設定</h2>
-<p>自動応答メッセージ の画面右側にある「設定はこちら」リンクを押下して、公式アカウントマネージャー画面を開く</p>
-<p class="image-container"><img alt="自動応答メッセージ" src="img/266a6b0c06bd5876.png"></p>
-<p>応答設定の詳細設定</p>
+<p class="image-container"><img alt="Webhook URL" src="img/30433e8b9d8b7414.png"></p>
+<h2 is-upgraded>6-6. 応答設定</h2>
+<p>LINE公式アカウント機能 の画面右側にある「編集」リンクを押下して、公式アカウントマネージャー画面を開く</p>
+<p class="image-container"><img alt="公式アカウントマネージャー画面" src="img/57b4c40a992fb748.png"></p>
+<h3 is-upgraded>応答設定画面を開く</h3>
+<p>公式アカウントマネージャー画面左の「応答設定」を選択して応答設定画面を開く</p>
+<p class="image-container"><img alt="応答設定" src="img/3201a2ccc266b7b2.png"></p>
+<p>応答設定を下記のように設定する</p>
 <ul>
+<li>応答モード<br><br><ul>
+<li>Bot</li>
+</ul>
+</li>
+<li>あいさつメッセージ<br><br><ul>
+<li>オン</li>
+</ul>
+</li>
 <li>応答メッセージ<br><br><ul>
 <li>オフ</li>
 </ul>
@@ -171,10 +188,11 @@ Forwarding                    https://xxxxxx.ngrok.io -&gt; http://localhost:500
 </ul>
 </li>
 </ul>
-<p class="image-container"><img alt="応答メッセージ" src="img/8d142e782ff8f1b7.png"></p>
+<p class="image-container"><img alt="応答設定" src="img/b0af8fa69dbc9462.png"></p>
 <h2 is-upgraded>6-7. 作成したBotのチャネルを友だち登録する</h2>
-<p>LINEアプリへのQRコードをLINEアプリで読み込んで友だち登録する</p>
-<p class="image-container"><img alt="BotQRCode" src="img/ae470c8ebc510924.png"></p>
+<p>LINE Bot へのQR コードをLINEアプリで読み込んで友だち登録する</p>
+<p class="image-container"><img alt="BotQRCode" src="img/1f66dc03058f61c8.png"></p>
+<p><em>LINE Bot へのQR コードは、LINE Developers の「Messaging API 設定」タブにあります</em></p>
 
 
       </google-codelab-step>
@@ -215,12 +233,12 @@ $ cd hands-on-line-pay-v3
 </ul>
 </li>
 <li>表示期間<br><br><ul>
-<li>2019/11/01  00:00</li>
+<li>2020/01/01  00:00</li>
 <li>2021/01/01  00:00</li>
 </ul>
 </li>
 </ul>
-<p class="image-container"><img alt="リッチメニュー" src="img/75f1abd9aa85b071.png"></p>
+<p class="image-container"><img alt="リッチメニュー" src="img/327eb4ce2ed63f33.png"></p>
 <h2 is-upgraded>8-3. リッチメニューのテンプレート設定</h2>
 <p>リッチメニューの大きさと、ボタン領域・数を設定する</p>
 <p class="image-container"><img alt="リッチメニュー" src="img/56adf94258774875.png"></p>
