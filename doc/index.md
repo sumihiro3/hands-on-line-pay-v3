@@ -10,7 +10,7 @@ id: dist
 
 ---
 
-# LINE Pay v3 ハンズオン資料 [Version. 2019.11.22]
+# LINE Pay v3 ハンズオン資料 [Version. 2020.02.22]
 
 ## 1-1. LINE Pay とは
 
